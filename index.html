@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mi Proyecto</title>
+        <style>
+
+            body {
+                font-family: 'Helvetica Neue','Arial', sans-serif;
+                margin: 0;
+                background-color: #f2f2f2;
+                color: #333;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header {
+                background-color: #201E1F;
+                color: white;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            #header-principal a {
+                color: white;
+                text-decoration: none;
+            }
+
+            /*
+            Logo 
+            */
+            #logo {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+            }
+
+            #logo img {
+                margin-right: 10px;
+            }
+
+            #logo:hover {
+                color: #629460;
+            }
+
+            #logo .site-name {
+                font-weight: 700;
+                font-size: 1.5em;
+                text-align: center;
+                color: white;
+            }
+
+            /*
+            Navegacion
+            */
+            nav {
+                display: flex;
+            }
+
+            nav ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-left: 15px;
+            }
+
+            nav ul li a {
+                display: block;
+                padding: 10px 15px;
+                text-decoration: none;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+            nav ul li a:hover {
+                background: #629460;
+                color: white;
+                size: 20px;
+                border-radius: 20px;
+            }
+
+            /*
+            Otros estilos
+            */
+            h2 {
+                color: #201E1F;
+                text-align: center;
+                margin: 20px 0;
+                font-size: 2em;
+                font-weight: bold;
+            }
+
+            main {
+                width: 100%;
+                max-width: 1200px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            article {
+                background-color: white;
+                border: 1px solid #ddd;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                margin-bottom: 30px;
+                width: 100%;
+                transition: box-shadow 0.3s ease;
+            }
+
+            article:hover {
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+
+            table th, table td {
+                padding: 12px;
+                border: 1px solid #ddd;
+                text-align: left;
+            }
+
+            table th {
+                background-color: #629460;
+                color: white;
+            }
+
+            
+
+            #divison {
+                text-align: center;
+                font-size: 2em;
+                margin: 30px 0;
+                color: #333;
+                font-weight: bold;
+            }
+
+            footer {
+                background-color: #201E1F;
+                padding: 20px 0;
+                color: white;
+                text-align: center;
+                margin-top: 50px;
+                width: 100%;
+            }
+
+            footer h2 {
+                font-size: 1.2em;
+                margin: 0;
+            }
+
+            @media (max-width: 768px) {
+                header {
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                nav ul {
+                    flex-direction: column;
+                }
+
+                nav ul li {
+                    margin-left: 0;
+                    margin-top: 10px;
+                }
+
+                h2 {
+                    font-size: 1.5em;
+                }
+
+                article {
+                    padding: 15px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <header id="header-principal">
+            <div id="logo">
+                <span class="site-name">Solución a TechZone</span>
+                <span><img src="image.png" alt=" imagen que acompaña al logo" width="50px" height="50px"></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#01">Planificación</a></li>
+                    <li><a href="#02">Requisitos Funcionales</a></li>
+                    <li><a href="#03">Diseño de la Arquitectura</a></li>
+                    <li><a href="#04">Implementación</a></li>
+                    <li><a href="#05">Pruebas</a></li>
+                    <li><a href="#06">Despliegue y Mantenimiento</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <h2 id="01">Planificación y Cronograma de Trabajo</h2>
+        <article>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Funcionalidad</th>
+                        <th>Duración estimada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Catálogo de productos</td><td>2 semanas</td></tr>
+                    <tr><td>Carrito de compras</td><td>1 semana</td></tr>
+                    <tr><td>Registro e inicio de sesión</td><td>2 semanas</td></tr>
+                    <tr><td>Historial de pedidos</td><td>1 semana</td></tr>
+                    <tr><td>Proceso de pago</td><td>2 semanas</td></tr>
+                    <tr><td>Notificaciones por correo</td><td>1 semana</td></tr>
+                    <tr><td>Seguimiento de pedidos</td><td>1 semana</td></tr>
+                </tbody>
+            </table>
+            <p>Este cronograma distribuye el trabajo a lo largo de los 3 meses de desarrollo, con tiempos dedicados a cada uno de los requisitos esenciales.</p>
+        </article>
+
+        <h2 id="02">Definición de Requisitos</h2>
+        <article>
+            <table>
+                <thead>
+                    <tr><th colspan="2">Requisitos Funcionales</th></tr>
+                    <tr><th>Requisito</th><th>Descripción</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Catálogo de productos</td><td>Los usuarios podrán ver todos los productos organizados en diferentes categorías.</td></tr>
+                    <tr><td>Carrito de compras</td><td>Los usuarios podrán añadir productos a un carrito de compras.</td></tr>
+                    <tr><td>Registro e inicio de sesión</td><td>Los usuarios podrán registrarse y gestionar su cuenta.</td></tr>
+                </tbody>
+            </table>
+        </article>
+
+        <h2 id="03">Diseño de la Arquitectura</h2>
+        <article>
+            <ul>
+                <li><strong>Frontend:</strong> Se desarrollará con React para una interfaz rápida y adaptable.</li>
+                <li><strong>Backend:</strong> Node.js gestionará operaciones de usuarios, carritos y pagos.</li>
+                <li><strong>Base de datos:</strong> MongoDB será usada para manejar productos y pedidos.</li>
+            </ul>
+        </article>
+
+        <h2 id="04">Implementación</h2>
+        <article>
+            <ul>
+                <li>Configurar la API REST para productos y pagos.</li>
+                <li>Desarrollar las interfaces de usuario con React.</li>
+                <li>Integrar pasarelas de pago.</li>
+            </ul>
+        </article>
+
+        <h2 id="05">Pruebas</h2>
+        <article>
+            <ul>
+                <li>Pruebas de carga con JMeter.</li>
+                <li>Pruebas de compatibilidad en distintos dispositivos.</li>
+            </ul>
+        </article>
+
+        <h2 id="06">Despliegue y Mantenimiento</h2>
+        <article>
+            <ul>
+                <li>La aplicación será desplegada en AWS.</li>
+                <li>Monitorización de rendimiento con CloudWatch.</li>
+            </ul>
+        </article>
+
+        <footer>
+            <h2>Footer</h2>
+            <h2>Footeeer</h2>
+        </footer>
+    </body>
+</html>
